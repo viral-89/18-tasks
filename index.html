@@ -1,23 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <div class="main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 1. Div with It's Styles -->
+    <div class="main">
       <div class="container" id="top"></div>
       <div class="container" id="right"></div>
       <div class="container" id="left"></div>
       <div class="container" id="bottom"></div>
+    </div>
+
+    <p class="fixed">This is a <strong>fixed</strong> positioned paragraph. It stays on the screen even when you scroll.</p>
+    <!-- 2.pseudo class hover  -->
+    <div class="pseudo">hover</div>
+    <br />
+
+    <!-- 3.anchor tag that show pseudo class like :acitve and :visited  -->
+    <div class="anchor">
+      <a href="#">This is a Anchor Tag</a>
+    </div>
+
+    <!-- 4.section with different html tag and that show pseudo element -->
+    <section class="pseudo-element">
+      <p id="pseudo1">Select Text To See the pseudo element</p>
+      <br />
+      <p id="pseudo2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+        tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+        nobis nostrum sunt fuga. Facere, nemo cupiditate eveniet nobis quia
+        neque consectetur eius. Ratione ad rem fugiat enim autem nesciunt
+        dolore?
+      </p>
+    </section>
+
+    <!-- 5.Different types of display -->
+    <div class="display-types">
+      <section>
+        <div class="block">Block1</div>
+        <div class="block">Block2</div>
+      </section>
+      <br />
+      <section>
+        <div class="inline">Inline1</div>
+        <div class="inline">Inline2</div>
+      </section>
+      <br />
+      <section>
+        <div class="inline-block">Inline-Block1</div>
+        <div class="inline-block">Inline-Block2</div>
+      </section>
+      <section>
+        <div class="flex-main">
+          <div class="flex1">Flex1</div>
+          <div class="flex2">Flex2</div>
+        </div>
+        <div class="grid-main">
+          <div class="grid1">Flex1</div>
+          <div class="grid2">Flex2</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 6.position property like absolute, fixed, sticky, relative -->
+    <section>
+      <p class="relative">
+        This is a <strong>relative</strong> positioned paragraph.
+      </p>
+      <p class="absolute">
+        This is an <strong>absolute</strong> positioned paragraph.
+      </p>
+   </section>
+       <p class="sticky">This is a <strong>sticky</strong> paragraph. It sticks to the top when scrolling within its container.</p>
+
+   <!-- 7.when user hover that div image will be zoom-in or zoom-out -->
+    <div class="image">
+       <img src="car_image.jpg" alt="car_image" class="overflow-visible">
    </div>
-   <div class="pseudo">
-      hover
-   </div>
-   <div class="anchor">
-      <a href="#">This is a Anchor Tag    </a>
-   </div>
-</body>
+
+   <!-- 8.html list with different type of bullets with css -->
+    <h2>1. Unordered List with Square Bullets</h2>
+  <ul class="square-bullets">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+  </ul>
+
+  <h2>2. Unordered List with Inside Bullets</h2>
+  <ul class="inside-bullets">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <h2>3. Unordered List with Outside Bullets</h2>
+  <ul class="outside-bullets">
+    <li>Red</li>
+    <li>Green</li>
+    <li>Blue</li>
+  </ul>
+
+  <h2>4. Unordered List with Custom Image Bullets</h2>
+  <ul class="image-bullets">
+    <li>Dog</li>
+    <li>Cat</li>
+    <li>Rabbit</li>
+  </ul>
+  </body>
 </html>
